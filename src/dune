@@ -1,0 +1,7 @@
+(executable
+ (name repro_ws)
+ (libraries
+  core
+  eio_main eio-ssl httpun-ws-eio)
+ (preprocess
+  (pps ppx_jane ppx_yojson_conv)))
